@@ -1,0 +1,38 @@
+FICHA DOCE - COMO COLOCAR NO CELULAR
+=====================================
+
+O app é uma pasta (esta). Para instalar no celular ele precisa estar publicado
+em um endereço seguro (https). Abrir o index.html direto do computador funciona
+para usar, mas NÃO permite instalar.
+
+PASSO 1 - Publicar (grátis, uns 2 minutos)
+  Opção A - Netlify Drop: entre em app.netlify.com/drop e arraste esta pasta
+            inteira (ficha-doce) para a página. Ele devolve um link https.
+  Opção B - GitHub Pages: crie um repositório, envie os arquivos desta pasta
+            e ative "Pages" nas configurações. O link será usuario.github.io/nome.
+
+PASSO 2 - Instalar
+  Android (Chrome): abra o link > menu (3 pontinhos) > "Instalar app"
+                    (ou "Adicionar à tela inicial").
+  iPhone (Safari):  abra o link > Compartilhar > "Adicionar à Tela de Início".
+  Computador (Chrome/Edge): ícone de instalar na barra de endereço.
+
+Depois da primeira abertura com internet, o app funciona SEM internet.
+
+SEUS DADOS
+  - Ficam salvos no aparelho (insumos, receitas e vendas).
+  - Para trocar um preço: aba Insumos > ícone de lápis > altere o valor.
+    As receitas e os preços de venda são recalculados sozinhos.
+  - Para editar uma receita: aba Receitas > ícone de lápis.
+  - Botão "Dados" (topo): backup em arquivo e pasta "Ficha Doce".
+      * Salvar backup: gera um arquivo único (compartilhe no Drive/WhatsApp).
+      * Pasta "Ficha Doce": no Chrome/Edge do computador o app cria a pasta com
+        insumos.json, receitas.json e vendas.json e atualiza a cada alteração.
+        Você pode abrir esses arquivos, mudar valores (ex.: "preco") e usar
+        "Carregar da pasta" para o app recalcular tudo.
+  - No celular, use o backup em arquivo (navegadores de celular não deixam o
+    site criar pastas sozinho).
+
+ATUALIZAR O APP DEPOIS
+  Se você trocar o index.html, abra o arquivo sw.js e mude 'ficha-doce-v1' para
+  'ficha-doce-v2' (e assim por diante) antes de publicar de novo.
